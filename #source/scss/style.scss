@@ -1,0 +1,592 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+// Переменные для блока
+
+body {
+	/*background-image: url('../img/body/Component 64.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;*/
+	background: #fde2f1;
+	font-family: 'Montserrat', sans-serif;
+}
+.conteiner {
+	max-width: 1410px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: 1200px){
+		max-width: 1000px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.div {
+	flex: 1 1 65vh;
+	display: flex;
+}
+// Шаблон №1
+
+//Шапка===========================================================================================================================================================================================
+
+.heder {}
+.heder-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 127px;
+	position: relative;
+	@media (max-width: 767px){
+		height: 90px;
+	}
+}
+.heder-Logo {
+	flex: 0 0 11.3475%;
+	display: flex;
+	order: 1;
+}
+.heder-Logo img{
+	@media (max-width: 375px){
+		width: 130px;
+	}
+}
+.heder-MainPart {
+	flex: 0 0 82.6525%;
+	display: flex;
+	order: 2;
+	justify-content: space-between;
+	@media (max-width: 1200px){
+		flex: 0 0 80%;
+	}
+}
+.heder-MainPart-list {
+	flex: 0 0 22.127%;
+	display: flex;
+	align-items: center;
+	@media (max-width: 1200px){
+		flex: 0 0 37%;
+		margin-left: 3vw;
+	}
+}
+.list {
+	flex: 0 0 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.link a{
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+}
+
+
+.heder-MainPart-authorization {
+	flex: 0 0 38.72%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 1200px){
+		flex: 0 0 45%;
+		margin-left: 3vw;
+	}
+	@media (max-width: 900px){
+		flex: 0 0 53%;
+	}
+}
+.switchTopics {
+	padding: 11px 16px;
+	background: #fff;
+	border-radius: 10px;
+}
+.switchTopics span{
+	padding: 0;
+	margin: 0;
+}
+.switchTopics span p{
+	display: none;
+}
+.switchTopics span:first-child{
+	padding-right: 18px;
+}
+.authorization {
+	display: flex;
+	align-items: center;
+}
+.SignIn {
+	margin-right: 32px;
+}
+.SignIn a{
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+}
+.SignIn span{
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: #ceacba;
+}
+.SignUp {
+	padding: 16px 28px;
+	background: #de3d9b;
+	border-radius: 20px;
+}
+.SignUp a{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 700;
+}
+
+
+
+//Бургер========================================================================================================================================================================================================================
+.heder-menu__icon{display: none;}
+.heder-menu {
+	display: none;
+}
+@media (max-width: 767px){
+	.heder-MainPart{
+		display: block;
+	}
+	.list{
+		display: block;
+		padding-top: 115px;
+	}
+	.link{
+		padding-bottom: 23px;
+	}
+	.link a{
+		font-size: 48px;
+		color: #fff;
+	}
+	.heder-MainPart-authorization {
+		display: block;
+	}
+	.authorization {
+		display: block;
+	}
+	.switchTopics span {
+		font-size: 25px;
+		color: #fff;
+	}
+	.switchTopics span p{
+		display: inline;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 25px;
+		color: #fff;
+		font-weight: 700;
+		margin-left: 12px;
+	}
+	.switchTopics {
+		padding-top: 20vw;
+		display: flex;
+		background: transparent;
+	}
+	.switchTopics span:first-child{
+		padding-right: 10vw;
+	}
+	.SignIn {
+		background: #fff;
+		margin: 0;
+		margin-top: 35px;
+		text-align: center;
+		padding: 25px 0;
+		border-radius: 30px;
+	}
+	.SignIn a{
+		font-size: 18px;
+		color: #de3c9f;
+		font-weight: 800;
+		text-align: center;
+	}
+	.SignIn span{
+		display: none;
+	}
+	.SignUp {
+		background: transparent;
+		border: 1px solid #fff;
+		margin: 0;
+		margin-top: 15px;
+		text-align: center;
+		padding: 25px 0;
+		border-radius: 30px;
+	}
+	.SignUp a{
+		font-size: 16px;
+		color: #fff;
+		font-weight: 700;
+	}
+
+
+
+	body.lock {
+		overflow: hidden;
+	}
+	.heder-menu__icon-body {
+		width: 18px;
+		height: 16px;
+		position: relative;
+	}
+	.heder-menu__icon{
+		transition: 0.3s;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 20px;
+		right: 15px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		z-index: 5;
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 0 15px rgba(0,0,0,0.4);
+		span{
+			transition: 0.3s;
+			top: 7px;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000000;
+			&:first-child{
+				top: 0;
+				left: 5px;
+				width: 11px;
+			}
+			&:last-child{
+				top: auto;
+				left: 2px;
+				width: 11px;
+				bottom: 0px;
+			}
+		}
+		&.active{
+			span {
+				transform: scale(0);;
+				&:first-child{
+					width: 14px;
+					transform:rotate(-45deg);
+					top: 8px;
+					left: 2px;
+				}
+				&:last-child{
+					width: 14px;
+					transform:rotate(45deg);
+					top: 8px;
+					left: 2px;
+				}
+
+			}
+		}
+		
+	}
+	.heder-menu{
+		transition: 0.8s;
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		overflow: auto;
+		left: -120%;
+		top: 0;
+		background: linear-gradient(45deg, #DE3CB1 0%,#De3C76 100%);
+		padding: 15px;
+		padding-top: 25px;
+		&.active {
+			left: 0;
+		}
+	}
+}
+
+
+//==================================================================================================================================================================================================
+
+//футер=======================================================================================================================================================================================================
+
+.foter {
+	
+}
+.container {}
+
+.foter-body {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	position: relative;
+	border-top: 1px solid #000;
+	@media (max-width: 800px){
+		height: 200px;
+		flex-direction: column;
+	}
+}
+.foter-flex-line {
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1px;
+	width: 100%;
+}
+.foter-body-left {
+	flex: 0 0 36.87%;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1200px){
+		flex: 40%;
+	}
+	@media (max-width: 800px){
+		flex-direction: column;
+		order: 2;
+	}
+}
+.foter-body-left-Logo {
+	flex: 0 0 20%;
+	@media (max-width: 800px){
+		flex: 0 0 50%;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		padding-bottom: 20px;
+		order: 2;
+	}
+}
+.foter-body-left-meny {
+	flex: 0 0 59.61%;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	height: 45px;
+	position: relative;
+	top: 5px;
+	@media (max-width: 800px){
+		flex: 0 0 50%;
+	}
+}
+.foter-body-left-links {
+	display: flex;
+	flex-wrap: wrap;
+}
+.foter-body-left-link {
+	margin-right: 10px;
+	@media (max-width: 1320px){
+		margin-bottom: 10px;
+	}
+}
+.foter-body-left-link span{
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: #ceacba;
+}
+.foter-body-left-link a{
+	font-size: 13px;
+	color: #000;
+	font-weight: 600;
+}
+.foter-body-left-link:nth-child(1) {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+.foter-body-reght {
+	flex: 0 0 47.63%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 1200px){
+		flex: 0 0 45%;
+		padding-left: 2vw;
+	}
+	@media (max-width: 800px){
+		flex-direction: column;
+		flex: 0 0 30%;
+		order: 1;
+	}
+}
+.foter-body-reght-languages {
+	flex: 0 0 27.06%;
+	@media (max-width: 800px){
+		display: flex;
+		order: 3;
+		align-items: center;
+		flex: 100%;
+		padding-bottom: 20px;
+	}
+}
+.foter-body-reght-languages-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.foter-body-reght-languages-link {
+	padding-right: 5px;
+}
+.foter-body-reght-languages-link a{
+	font-weight: 500;
+	font-size: 14px;
+	color: #000;
+	line-height: 17.07px;
+}
+.foter-body-reght-languages-link span{
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: #ceacba;
+}
+.foter-body-reght-languages-link.activ a{
+	font-weight: 800 ;
+	/*background: linear-gradient(45deg, #DE3CB1 0%,#DE3C76 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	color: #DE3C76;
+	/*display: table;*/
+}
+.foter-body-reght-languages-link.activ span{
+	display: none;
+}
+.foter-body-reght-links {
+	flex: 0 0 45.86%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 1200px){
+		flex: 0 0 65%;
+		padding-left: 1vw;
+	}
+	@media (max-width: 800px){
+		width: 150%;
+		order: 1;
+		padding: 0;
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+}
+.foter-body-reght-links-text {
+	line-height: 17.07px;
+	font-size: 14px;
+	color: #000;
+	@media (max-width: 1200px){
+		font-size: 12px;
+	}
+	@media (max-width: 800px){
+		display: none;
+	}
+}
+.foter-body-reght-links-list {
+	flex: 0 0 67.21%;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 800px){
+		flex: 100%;
+	}
+}
+.foter-body-reght-link a{
+	font-size: 17px;
+	/*background: linear-gradient(45deg, #DE3CB1 0%,#DE3C76 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	color: #DE3C76;
+	/*display: table;*/
+}
+.icon-faisbuk {}
+.icon-instagram {}
+.icon-tvitr {}
+.icon-Ytub {}
+.icon-M {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
