@@ -477,7 +477,7 @@ body {
   border-top: 1px solid #000; }
   @media (max-width: 800px) {
     .foter-body {
-      height: 370px;
+      height: 370px !important;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
