@@ -1,0 +1,32 @@
+.BlokImg {
+	padding-bottom: 90px;
+	@media (max-width: 375px){
+		padding-top: 135px;
+		padding-bottom: 125px;
+	}
+}
+.container {}
+.BlokImg-body {
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.BlokImg-img {
+	width: 500px;
+	height: 575px;
+	@media (max-width: 800px){
+		width: 70vw;
+		height: 80vw;
+	}
+	@media (max-width: 375px){
+		width: 295px;
+		height: 335px;
+	}
+}
+
+.BlokImg-img img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
