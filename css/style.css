@@ -544,6 +544,14 @@ footer {
     .HistoryOfCreation-body-left {
       padding-left: 20px; } }
 
+.test {
+	overflow: hidden;
+}
+
+
+
+
+
 .HistoryOfCreation-body-left-blok {
   position: relative;
   width: 470px;
