@@ -1,0 +1,46 @@
+.foter {
+	max-height: 120px;
+	background: #E6F1DB;
+}
+.foter-body {
+	font-size: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	position: relative;
+	z-index: 10;
+	@media (max-width: 375px){
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+}
+.foter-body-blok {}
+.foter-list {
+	font-size: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.foter-link {
+	margin-right: 70px;
+	@media (max-width: 800px){
+		margin-right: 3vw;
+	}
+}
+.foter-link:last-child {
+	margin: 0;
+}
+.foter-Logo{
+	display: block;
+	@media (max-width: 800px){
+		width: 128px;
+		height: 30px;
+	}
+}
+.foter-Logo img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}

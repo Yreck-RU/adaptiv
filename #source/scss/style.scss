@@ -1,0 +1,22 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+//Постоянна используеммые блоки
+@import "Bem.scss";
+//Общие стили страниц
+@import "index.scss";
+//Шапка
+@import "heder.scss";
+//Подвал
+@import "footer.scss";
+//Блок 1
+@import "BlokImg.scss";
+//Блок 2
+@import "Video.scss";
+//Блок 3
+@import "HistoryOfCreation.scss";
+//Блок 4
+@import "achievements.scss";
+//Блок 5
+@import "book.scss";
+//Блок 6
+@import "test.scss";
